@@ -4,7 +4,7 @@
 
 <template>
   <footer text="center gray-300 12px" py-2>
-    MIT Licensed | Copyright &copy; 2022-PRESENT JiatLn VVTT
+    MIT Licensed | Copyright &copy; 2022-PRESENT JiatLn CSS100
   </footer>
 </template>
 

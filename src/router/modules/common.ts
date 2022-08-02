@@ -9,6 +9,11 @@ const routes: RouteRecordRaw[] = [
       title: '首页',
     },
   },
+  {
+    path: '/1',
+    name: '1',
+    component: () => import('@/pages/001.vue'),
+  },
 ]
 
 export default routes
