@@ -13,6 +13,9 @@ const router = useRouter()
     <div text="gray-400" cursor-pointer underline @click="router.push({ name: '2' })">
       第二章 · 瓶中纸船
     </div>
+    <div text="gray-400" cursor-pointer underline @click="router.push({ name: '3' })">
+      第三章 · 窗户与云
+    </div>
   </div>
   <TheFooter />
 </template>
