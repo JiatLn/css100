@@ -2,6 +2,8 @@
 
 > CSS 100 days, inspired by https://github.com/antfu/100
 
+👉 online link: [click me](css100.netlify.app)
+
 
 ## Content
 
