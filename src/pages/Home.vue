@@ -7,8 +7,11 @@ const router = useRouter()
     <h3 mb-2 text="24px gray-600" font-bold>
       CSS 100 days
     </h3>
-    <div text="gray-400" cursor-pointer underline @click="router.push('/1')">
+    <div text="gray-400" cursor-pointer underline @click="router.push({ name: '1' })">
       第一章 · 风花雪月
+    </div>
+    <div text="gray-400" cursor-pointer underline @click="router.push({ name: '2' })">
+      第二章 · XXX
     </div>
   </div>
   <TheFooter />

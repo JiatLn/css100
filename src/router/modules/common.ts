@@ -1,5 +1,15 @@
 import type { RouteRecordRaw } from 'vue-router'
 
+// auto import route at /pages/demo/*.vue
+const modules = import.meta.glob('/src/pages/demo/*.vue')
+const demoRoutes: RouteRecordRaw[] = Object.entries(modules).map(([_, comp], idx) => {
+  return {
+    path: `/demo/${idx + 1}`,
+    name: String(idx + 1),
+    component: comp,
+  } as unknown as RouteRecordRaw
+})
+
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -9,11 +19,7 @@ const routes: RouteRecordRaw[] = [
       title: '首页',
     },
   },
-  {
-    path: '/1',
-    name: '1',
-    component: () => import('@/pages/001.vue'),
-  },
+  ...demoRoutes,
 ]
 
 export default routes
