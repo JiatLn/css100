@@ -2,7 +2,7 @@
 
 > CSS 100 days, inspired by https://github.com/antfu/100
 
-👉 online link: [click me](css100.netlify.app)
+👉 online link: [click me](https://css100.netlify.app)
 
 
 ## Content
