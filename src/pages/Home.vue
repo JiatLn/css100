@@ -19,6 +19,9 @@ const router = useRouter()
     <div text="gray-400" cursor-pointer underline @click="router.push({ name: '4' })">
       第四章 · 径向渐变
     </div>
+    <div text="gray-400" cursor-pointer underline @click="router.push({ name: '5' })">
+      第五章 · 四大名著
+    </div>
   </div>
   <TheFooter />
 </template>
