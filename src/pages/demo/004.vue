@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div w-100vw h-100vh flex-c>
+  <div wh-full>
     <div class="box" />
   </div>
 </template>
@@ -12,11 +12,13 @@
   inherits: false;
   initial-value: fuchsia;
 }
+
 @property --colorC {
   syntax: '<color>';
   inherits: false;
   initial-value: #f79188;
 }
+
 @property --colorF {
   syntax: '<color>';
   inherits: false;
@@ -30,6 +32,7 @@
   background: radial-gradient(var(--colorA), var(--colorC), var(--colorF));
   animation: change 6s infinite linear;
   position: relative;
+
   &::before,
   &::after {
     content: '';
@@ -43,6 +46,7 @@
     transform: translate(-50%, -50%);
     animation: bd 2s infinite linear;
   }
+
   &::after {
     animation-delay: 1s;
   }
@@ -54,6 +58,7 @@
     --colorC: #a93ee0;
     --colorF: fuchsia;
   }
+
   50% {
     --colorA: #ff3c41;
     --colorC: #e228a0;
@@ -65,6 +70,7 @@
     --colorC: #0ebeff;
     --colorF: #efc371;
   }
+
   100% {
     transform: rotate(360deg);
   }

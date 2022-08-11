@@ -93,7 +93,7 @@ function tick() {
 </script>
 
 <template>
-  <div w-100vw h-100vh bg="#110c1e" flex="c" overflow-hidden relative>
+  <div wh-full bg="#110c1e" overflow-hidden relative>
     <div ref="divRef" />
     <div absolute class="moon" right="20%" w-60px h-60px bg="yellow-200" rounded-full />
   </div>
@@ -111,6 +111,7 @@ function tick() {
     transform: scale(.8);
     opacity: 0;
   }
+
   to {
     top: 20%;
     opacity: .99;

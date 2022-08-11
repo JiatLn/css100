@@ -36,16 +36,9 @@ const onHover = (idx: number) => {
 </script>
 
 <template>
-  <div w-100vw h-100vh flex-c>
+  <div wh-full>
     <ul flex="~ gap-10px nowrap">
-      <li
-        v-for="item in itemList"
-        :key="item.id"
-        class="item"
-        :class="{ active: acitveId === item.id }"
-        overflow-hidden
-        @mouseenter="onHover(item.id)"
-      >
+      <li v-for="item in itemList" :key="item.id" class="item" :class="{ active: acitveId === item.id }" overflow-hidden @mouseenter="onHover(item.id)">
         <span class="title">{{ item.name }}</span>
         <div v-show="acitveId === item.id" class="desc">
           {{ item.desc }}
@@ -68,13 +61,16 @@ const onHover = (idx: number) => {
   transition: .6s ease-in-out;
   cursor: pointer;
   opacity: .5;
+
   &.active {
     width: 400px;
     opacity: 1;
+
     .desc {
       animation: typing 4s .6s forwards;
     }
   }
+
   .title {
     margin-right: 16px;
     color: #fff;
@@ -83,6 +79,7 @@ const onHover = (idx: number) => {
     letter-spacing: .2em;
     writing-mode: vertical-rl;
   }
+
   .desc {
     position: absolute;
     right: 40px;
@@ -100,6 +97,7 @@ const onHover = (idx: number) => {
   0% {
     width: 0;
   }
+
   100% {
     width: 200px;
   }

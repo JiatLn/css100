@@ -3,7 +3,7 @@ useTitle('第二章 · 瓶中纸船')
 </script>
 
 <template>
-  <div bg="#d3ddbd" w-100vw h-100vh flex-c>
+  <div bg="#d3ddbd" wh-full>
     <div class="bowl">
       <div class="water">
         <div class="water-inner" />
@@ -23,6 +23,7 @@ useTitle('第二章 · 瓶中纸船')
   background-color: #cde5e1;
   border: 3px solid #fff;
   border-radius: 50%;
+
   /* 瓶口 */
   &::before {
     content: "";
@@ -35,6 +36,7 @@ useTitle('第二章 · 瓶中纸船')
     border-radius: 50%;
     transform: translateX(-50%);
   }
+
   /* 阴影 */
   &::after {
     content: "";
@@ -48,12 +50,14 @@ useTitle('第二章 · 瓶中纸船')
     transform: translateX(-50%);
   }
 }
+
 .water {
   overflow: hidden;
   width: 100%;
   height: 100%;
   border: 8px solid transparent;
   border-radius: 50%;
+
   .water-inner {
     width: 100%;
     height: 100%;
@@ -87,6 +91,7 @@ useTitle('第二章 · 瓶中纸船')
   background-color: #fff;
   transform: translateX(-50%) translateY(-100%);
   animation: boat-shake 1s infinite ease-in;
+
   &::before {
     content: "";
     position: absolute;
@@ -98,6 +103,7 @@ useTitle('第二章 · 瓶中纸船')
     border-top-left-radius: 2px;
     transform: translateX(-100%);
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -119,6 +125,7 @@ useTitle('第二章 · 瓶中纸船')
   height: 36px;
   background-color: orchid;
   animation: flag-shake 1s .5s infinite ease-in;
+
   &::before {
     content: "";
     position: absolute;
@@ -135,15 +142,19 @@ useTitle('第二章 · 瓶中纸船')
   0% {
     transform: translateY(50%) skewY(0deg);
   }
+
   25% {
     transform: translateY(50%) skewY(4deg);
   }
+
   50% {
     transform: translateY(50%) skewY(0deg);
   }
+
   75% {
     transform: translateY(50%) skewY(-4deg);
   }
+
   100% {
     transform: translateY(50%) skewY(0deg);
   }
@@ -153,15 +164,19 @@ useTitle('第二章 · 瓶中纸船')
   0% {
     transform: translateX(-50%) translateY(-50%) skewY(0deg);
   }
+
   25% {
     transform: translateX(-50%) translateY(-50%) skewY(4deg);
   }
+
   50% {
     transform: translateX(-50%) translateY(-50%) skewY(0deg);
   }
+
   75% {
     transform: translateX(-50%) translateY(-50%) skewY(-4deg);
   }
+
   100% {
     transform: translateX(-50%) translateY(-50%) skewY(0deg);
   }
@@ -171,15 +186,19 @@ useTitle('第二章 · 瓶中纸船')
   0% {
     transform: translateX(-50%) translateY(-50%) skewY(0deg);
   }
+
   25% {
     transform: translateX(-50%) translateY(-55%) skewY(6deg);
   }
+
   50% {
     transform: translateX(-50%) translateY(-50%) skewY(0deg);
   }
+
   75% {
     transform: translateX(-50%) translateY(-55%) skewY(-6deg);
   }
+
   100% {
     transform: translateX(-50%) translateY(-50%) skewY(0deg);
   }
@@ -189,15 +208,19 @@ useTitle('第二章 · 瓶中纸船')
   0% {
     transform: skewY(0deg);
   }
+
   25% {
     transform: skewY(-6deg) translateY(-2%);
   }
+
   50% {
     transform: skewY(0deg);
   }
+
   75% {
     transform: skewY(6deg) translateY(-2%);
   }
+
   100% {
     transform: skewY(0deg);
   }
