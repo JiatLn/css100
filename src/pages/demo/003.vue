@@ -15,7 +15,7 @@ useTitle('第三章 · 窗户与云')
   </div>
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 /* 窗户 */
 .window {
   position: relative;

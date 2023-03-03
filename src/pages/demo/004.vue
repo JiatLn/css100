@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 @property --colorA {
   syntax: '<color>';
   inherits: false;

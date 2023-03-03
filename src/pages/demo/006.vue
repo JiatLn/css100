@@ -60,7 +60,7 @@ const text = ref<string>(`
   </div>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 .content {
   color: transparent;
   background: url(../../assets/img/006.gif) center/cover;

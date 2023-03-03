@@ -99,7 +99,7 @@ function tick() {
   </div>
 </template>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 .moon {
   animation: moon 6s forwards;
   filter: blur(3px);

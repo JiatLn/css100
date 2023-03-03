@@ -6,7 +6,7 @@ import router from './router'
 
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
-import '@/assets/styles/global.less'
+import '@/assets/styles/global.scss'
 
 const app = createApp(App)
 const pinia = createPinia()

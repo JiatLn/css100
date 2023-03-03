@@ -48,7 +48,7 @@ const onHover = (idx: number) => {
   </div>
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .item {
   position: relative;
   display: flex;

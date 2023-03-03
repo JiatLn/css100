@@ -13,9 +13,9 @@ useTitle('第二章 · 瓶中纸船')
       <div class="boat" />
     </div>
   </div>
-</template>
+</template>s
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .bowl {
   position: relative;
   width: 200px;

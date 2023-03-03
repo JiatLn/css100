@@ -29,5 +29,5 @@ const router = useRouter()
   <TheFooter />
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 </style>
